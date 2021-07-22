@@ -1,0 +1,29 @@
+<div class="calc__wrapper">
+    <div *ngIf="lastCounter.length>0" class="white">{{lastCounter}} {{operator}}</div>
+    <div class="calc__body">
+        <div class="calc_top">
+            {{counter}}
+        </div>
+        <div class="calc__botoom">
+            <div (click)="clearAll()" class="calc_btn calc_btn-big gray">AC</div>
+            <div (click)="addOperator('%')" class="calc_btn gray">%</div>
+            <div (click)="addOperator('/')" class="calc_btn orange">/</div>
+            <div (click)="addNumber(7)" class="calc_btn gray">7</div>
+            <div (click)="addNumber(8)" class="calc_btn gray">8</div>
+            <div (click)="addNumber(9)" class="calc_btn gray">9</div>
+            <div (click)="addOperator('*')" class="calc_btn orange">*</div>
+            <div (click)="addNumber(4)" class="calc_btn  gray">4</div>
+            <div (click)="addNumber(5)" class="calc_btn  gray">5</div>
+            <div (click)="addNumber(6)" class="calc_btn  gray">6</div>
+            <div (click)="addOperator('-')" class="calc_btn orange">-</div>
+            <div (click)="addNumber(1)" class="calc_btn  gray">1</div>
+            <div (click)="addNumber(2)" class="calc_btn  gray">2</div>
+            <div (click)="addNumber(3)" class="calc_btn  gray">3</div>
+            <div (click)="addOperator('+')" class="calc_btn orange">+</div>
+            <div (click)="addNumber(0)" class="calc_btn calc_btn-big gray">0</div>
+            <div (click)="addDot()" class="calc_btn gray">.</div>
+            <div (click)="equal()" class="calc_btn  orange">=</div>
+        </div>
+       
+    </div>
+</div>
